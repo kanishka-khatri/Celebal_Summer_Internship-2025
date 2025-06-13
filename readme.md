@@ -36,16 +36,19 @@ file-manager/
 ```bash
 git clone https://github.com/kanishka-khatri/Celebal_Summer_Internship-2025.git
 cd Celebal_Summer_Internship-2025
-2. Install Node.js
+
+---
+### 2. Install Node.js
 If not already installed, download from:
 https://nodejs.org/
-
-3. Start the Server
+---
+### 3. Start the Server
 npm start
 or simply:
 
 node index.js
-🌐 API Endpoints
+---
+###🌐 API Endpoints
 1.Create a File
 /create?name=yourfile.txt&content=yourcontent
 
@@ -83,7 +86,7 @@ http://localhost:3000/delete?name=kanishka.txt
 
 Thunder Client Response:
 File 'kanishka.txt' deleted successfully.
-
+---
 ## 🖼️ Screenshots
 
 ### 🔹 Create File (Thunder Client Request)

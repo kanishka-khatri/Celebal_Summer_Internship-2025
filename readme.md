@@ -24,6 +24,7 @@ file-manager/
 ├── package.json # Project metadata
 ├── README.md # Project documentation
 └── files/ # Directory to store user-generated files (auto-created)
+└── Output/ # Folder containing screenshot images
 
 
 ---
@@ -102,3 +103,12 @@ File 'kanishka.txt' deleted successfully.
 
 ### 🔹 Delete File Response (Browser Confirmation)
 ![Delete File Response](Output/DeleteFile.jpg)
+
+---
+
+## 👩‍💻 Author  
+**Kanishka Khatri**  
+B.Tech CSE, Mody University of Science and Technology 
+LinkedIn - https://www.linkedin.com/in/kanishka-khatri/ 
+
+📌 *Submitted for Celebal Summer Internship 2025 – Week 2 Task*

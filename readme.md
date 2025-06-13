@@ -1,56 +1,104 @@
-# Node.js File Manager 📁
+# 📁 Node.js File Manager Tool
 
-A simple file management tool created using **Node.js core modules** (`fs`, `path`, `http`) for the **Celebal Summer Internship 2025**.
-
-## 💡 Features
-
-- 📄 Create a file with content
-- 🔍 Read content from a file
-- ❌ Delete a file
-
-## 📂 Folder Structure
-
-file-manager/
-├── index.js # Main server code with file logic
-├── package.json # Project metadata and scripts
-└── README.md # Project overview and usage
-
-
-## ▶️ How to Run
-
-1. Make sure Node.js is installed.
-2. Run the project:
-
-npm start
-3.Open browser or Postman:
-
-Create file:
-
-http://localhost:3000/create?name=test.txt&content=HelloNode
-Read file:
-
-http://localhost:3000/read?name=test.txt
-Delete file:
-
-http://localhost:3000/delete?name=test.txt
-
-## Files
-Files are stored in the files/ folder created automatically.
-
-This project uses only built-in Node.js modules, no external libraries.
+This project is created as part of the **Celebal Summer Internship 2025 (Week 2 Assignment)**. It demonstrates how to build a simple file management tool using only **Node.js core modules** — no external libraries.
 
 ---
 
-## ✅ Next Step: GitHub Upload (Optional but Recommended)
+## 🚀 Features
 
-1. Go to [https://github.com/new](https://github.com/new)
-2. Create a repo named `node-file-manager` 
-3. Then run these commands in your project folder:
+- ✅ **Create** a new text file with custom content  
+- 📖 **Read** the contents of an existing file  
+- 🗑️ **Delete** a specific file from the system  
+- 🧱 Built using Node.js **core modules**:
+  - `fs` (File System)
+  - `path`
+  - `http`
+  - `url`
+
+---
+
+## 📁 Project Structure
+
+file-manager/
+├── index.js # Main server code
+├── package.json # Project metadata
+├── README.md # Project documentation
+└── files/ # Directory to store user-generated files (auto-created)
+
+
+---
+
+## ⚙️ How to Run the Project
+
+### 1. Clone the Repository
 
 ```bash
-git init
-git add .
-git commit -m "Node.js File Manager"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-git push -u origin main
+git clone https://github.com/kanishka-khatri/Celebal_Summer_Internship-2025.git
+cd Celebal_Summer_Internship-2025
+2. Install Node.js
+If not already installed, download from:
+https://nodejs.org/
+
+3. Start the Server
+npm start
+or simply:
+
+node index.js
+🌐 API Endpoints
+1.Create a File
+/create?name=yourfile.txt&content=yourcontent
+
+2.Read a File
+/read?name=yourfile.txt
+
+3.Delete a File
+/delete?name=yourfile.txt
+
+---
+
+## 🧪 Example Demo
+
+Use the following URLs to test the file manager locally after running the server:
+
+### ✅ Create a File
+Request:
+http://localhost:3000/create?name=kanishka.txt&content=Hello!%20I%20am%20Kanishka%20Khatri,%20Computer%20Science%20and%20Engineering%20Student%20from%20Mody%20University
+
+Thunder Client Response:
+File 'kanishka.txt' created successfully.
+### ✅ Read a File
+Request:
+http://localhost:3000/read?name=kanishka.txt
+
+Thunder Client Response:
+
+Contents of 'kanishka.txt':
+
+Hello! I am Kanishka Khatri, Computer Science and Engineering Student from Mody University
+### ✅ Delete a File
+Request:
+http://localhost:3000/delete?name=kanishka.txt
+
+
+Thunder Client Response:
+File 'kanishka.txt' deleted successfully.
+
+## 🖼️ Screenshots
+
+### 🔹 Create File (Thunder Client Request)
+![Create File Request](Output/CreateFileThunderClient.png)
+
+### 🔹 File Created (Browser Confirmation)
+![File Created](Output/FileCreate.jpg)
+
+### 🔹 Read File (Thunder Client Request)
+![Read File](Output/ReadFileThunderClient.png)
+
+### 🔹 Read File Response (Browser Confirmation)
+![Read File Response](Output/ReadFile.jpg)
+
+### 🔹 Delete File (Thunder Client Request)
+![Delete File](Output/DeletefileThunderClient.png)
+
+### 🔹 Delete File Response (Browser Confirmation)
+![Delete File Response](Output/DeleteFile.jpg)

@@ -33,7 +33,7 @@ file-manager/
 
 ## ⚙️ How to Run the Project
 
-### 1. Clone the Repository
+1. Clone the Repository
 
 ```bash
 git clone https://github.com/kanishka-khatri/Celebal_Summer_Internship-2025.git
@@ -42,14 +42,14 @@ cd Celebal_Summer_Internship-2025
 
 ---
 
-### 2. Install Node.js
+2. Install Node.js
 
 If not already installed, download from:  
 🔗 [https://nodejs.org/](https://nodejs.org/)
 
 ---
 
-### 3. Start the Server
+3. Start the Server
 
 ```bash
 npm start
